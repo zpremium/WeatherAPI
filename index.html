@@ -7,25 +7,17 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
-    <title>Consulta el Tiempo Meteorológico y Clima.</title>
+    <title>Consulta de tiempo de BCN</title>
 
     <link href="main.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 id="titulo">🔍 Buscador de Tiempo</h1>
+  <body onload="getWeather()">
+    
+    <h1 class="titulo">🔍 Buscador de Tiempo</h1>
 
-    <form id="formulario">
-      <div>
-        <input
-          type="text"
-          name="ciudad"
-          id="ciudad"
-          placeholder="Buscar ciudad"
-        />
-      </div>
-
-      <button type="button">Buscar</button>
-    </form>
+    <header>
+      <p id="tiempo"></p>
+    </header>
 
     <script src="Javascript/main.js"></script>
   </body>
